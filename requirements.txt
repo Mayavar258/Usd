@@ -1,0 +1,4 @@
+tgcrypto
+motor
+https://github.com/TelegramPlayGround/pyrogram/archive/refs/heads/unknown_errors.zip
+python-dotenv
