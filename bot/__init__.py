@@ -29,7 +29,7 @@ if os.path.exists("local.env"):
 else:
     logger.info("its recommended to use local.env file for environment variables.")
 #get it from my.telegram.org
-API_ID = os.environ.get("API_ID")
+API_ID = "27610252"
 if not API_ID:
     logger.error("API_ID is not set. Exiting...")
     sys.exit(1)
@@ -39,14 +39,13 @@ else:
     except ValueError:
         logger.error("API_ID is not a valid integer. Exiting...")
         sys.exit(1)
-API_HASH = os.environ.get("API_HASH")
+API_HASH = "73e16fc08192ba7c1d52d4dc9fa2b220"
 # user session string
-SESSION_STRING = os.environ.get("SESSION_STRING")
-
-LOG_CHAT = os.environ.get("LOG_CHAT")
+SESSION_STRING = "BQGlTIwAAfkuMOzEfm3azK-uhHbYkxCDUDR-XSGxcmfqY51JnVBYdttlTs0ckBabyZXEg4Pdr2nYdiuqcg5t8w-1_d11Vdg1DMFDXYGzI1NmSHuW1b0jZVYyEyFYGPY63Jwijyyr6XcpLHJ5N4KGbrNC2YHEVsf3T-VBNjVy1UMyyu12bj9htsjpXBVO8A_4ybP5sZ5E3-PVcsmOdIyW5d9usT2MvbYNfGNVgvKgjIDBk6U3AHd8gSab7RI_SYmm96SnPjcszfxVcjgOqWIMaFJq7wwmcpZJl69Nhz1Puj3WgEO9SmC3ippI0y1BdvdF3J9GzpN2_wRcpOSbp1_Owct79X6StAAAAAE9EwLhAA"
+LOG_CHAT = "-1002123026966"
 
 #sudo users
-SUDO_USERS = list(int(x) for x in os.environ.get("SUDO_USERS", "").split(" "))
+SUDO_USERS = list(int(x) for x in os.environ.get("SUDO_USERS", "5342104384").split(" "))
 
 if not LOG_CHAT:
     logger.error("LOG_CHAT is not set. Exiting...")
@@ -58,10 +57,10 @@ else:
         logger.error("LOG_CHAT is not a valid chat ID. Exiting...")
         sys.exit(1)
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
+BOT_TOKEN = "6523924964:AAGbSkckJy4TBuj8CXDAEhRMqXE6mbQmybI"
 
 #Database URL, 
-MONGO_DB = os.environ.get("MONGO_DB")
+MONGO_DB = "mongodb+srv://maya:maya@maya.nepuebg.mongodb.net/?retryWrites=true&w=majority"
 
 #Cmd Trigger
 CMD_TRIGGER = os.environ.get("CMD_TRIGGER", ".")
