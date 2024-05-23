@@ -88,7 +88,7 @@ class MyClient(Client):
             api_hash=API_HASH,
             bot_token=bot_token,
             session_string=session_string,
-            plugins=dict(root="bot/plugins/"),
+            plugins=dict(root="bot/plugins"),
             sleep_threshold=5,
         )
 
